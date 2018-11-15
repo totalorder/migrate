@@ -4,7 +4,7 @@
 [![packagecloud.io](https://img.shields.io/badge/deb-packagecloud.io-844fec.svg)](https://packagecloud.io/golang-migrate/migrate?filter=debs)
 [![Docker Pulls](https://img.shields.io/docker/pulls/migrate/migrate.svg)](https://hub.docker.com/r/migrate/migrate/)
 ![Supported Go Versions](https://img.shields.io/badge/Go-1.10%2C%201.11-lightgrey.svg)
-[![GitHub Release](https://img.shields.io/github/release/golang-migrate/migrate.svg)](https://github.com/golang-migrate/migrate/releases)
+[![GitHub Release](https://img.shields.io/github/release/golang-migrate/migrate.svg)](https://github.com/totalorder/migrate/releases)
 
 
 # migrate
@@ -18,7 +18,7 @@ __Database migrations written in Go. Use as [CLI](#cli-usage) or import as [libr
  * Database drivers don't assume things or try to correct user input. When in doubt, fail.
 
 
-Looking for [v1](https://github.com/golang-migrate/migrate/tree/v1)?
+Looking for [v1](https://github.com/totalorder/migrate/tree/v1)?
 
 Forked from [mattes/migrate](https://github.com/mattes/migrate)
 
@@ -107,9 +107,9 @@ __[Go Documentation](https://godoc.org/github.com/golang-migrate/migrate)__
 
 ```go
 import (
-    "github.com/golang-migrate/migrate/v3"
-    _ "github.com/golang-migrate/migrate/v3/database/postgres"
-    _ "github.com/golang-migrate/migrate/v3/source/github"
+    "github.com/totalorder/migrate/v3"
+    _ "github.com/totalorder/migrate/v3/database/postgres"
+    _ "github.com/totalorder/migrate/v3/source/github"
 )
 
 func main() {
@@ -126,9 +126,9 @@ Want to use an existing database client?
 import (
     "database/sql"
     _ "github.com/lib/pq"
-    "github.com/golang-migrate/migrate/v3"
-    "github.com/golang-migrate/migrate/v3/database/postgres"
-    _ "github.com/golang-migrate/migrate/v3/source/file"
+    "github.com/totalorder/migrate/v3"
+    "github.com/totalorder/migrate/v3/database/postgres"
+    _ "github.com/totalorder/migrate/v3/source/file"
 )
 
 func main() {

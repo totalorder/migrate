@@ -3,5 +3,5 @@
 package main
 
 import (
-	_ "github.com/golang-migrate/migrate/v3/database/spanner"
+	_ "github.com/totalorder/migrate/v3/database/spanner"
 )

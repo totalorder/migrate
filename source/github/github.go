@@ -11,8 +11,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/golang-migrate/migrate/v3/source"
 	"github.com/google/go-github/github"
+	"github.com/totalorder/migrate/v3/source"
 )
 
 func init() {

@@ -13,8 +13,8 @@ import (
 	"strings"
 	"testing"
 
-	dt "github.com/golang-migrate/migrate/v3/database/testing"
-	mt "github.com/golang-migrate/migrate/v3/testing"
+	dt "github.com/totalorder/migrate/v3/database/testing"
+	mt "github.com/totalorder/migrate/v3/testing"
 )
 
 var versions = []mt.Version{

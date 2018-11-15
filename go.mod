@@ -1,4 +1,4 @@
-module github.com/golang-migrate/migrate/v3
+module github.com/totalorder/migrate/v3
 
 require (
 	cloud.google.com/go v0.27.0

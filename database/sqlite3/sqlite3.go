@@ -3,9 +3,9 @@ package sqlite3
 import (
 	"database/sql"
 	"fmt"
-	"github.com/golang-migrate/migrate/v3"
-	"github.com/golang-migrate/migrate/v3/database"
 	_ "github.com/mattn/go-sqlite3"
+	"github.com/totalorder/migrate/v3"
+	"github.com/totalorder/migrate/v3/database"
 	"io"
 	"io/ioutil"
 	nurl "net/url"
