@@ -97,7 +97,18 @@ func WithInstance(instance *sql.DB, config *Config) (database.Driver, error) {
 		config: config,
 	}
 
+	err = px.Lock()
+	if err != nil {
+		return nil, err
+	}
+
 	if err := px.ensureVersionTable(); err != nil {
+		px.Unlock()
+		return nil, err
+	}
+
+	err = px.Unlock()
+	if err != nil {
 		return nil, err
 	}
 
